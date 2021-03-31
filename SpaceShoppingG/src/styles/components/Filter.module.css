@@ -1,0 +1,52 @@
+.filterContainer{
+  background-color: #1E2529;
+  margin: 10px;
+  border-radius: 10px;
+  padding: 1.2rem;
+
+  color: white;
+
+  display: flex;
+  justify-content:space-between; 
+}
+
+@media only screen and (max-width: 660px) {
+  .filterContainer{
+    flex-direction: column;
+  }
+
+  .filterContainerSelect {
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    margin-bottom: 0.62rem;
+  }
+
+  .filterContainer > div{
+    overflow-x: auto;
+  }
+
+  .filterContainer > div::-webkit-scrollbar {
+    height: 0.15rem;
+  }
+  
+  .filterContainer > div::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  
+  .filterContainer > div::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  .filterContainer > div::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+}
+
+.filterContainer > div > select{
+  margin: 0 0.62rem;
+}
+
+.filterContainerSpan span{
+  margin: 0 0.22rem;
+}
